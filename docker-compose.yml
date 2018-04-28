@@ -1,0 +1,13 @@
+version: '2'
+services:
+  my-notebook:
+    build:
+      context: .
+    user: root
+    ports:
+      - "127.0.0.1:8888:8888"
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - "$PWD/notebooks:/home/jovyan/work"
+    environment:
+      GRANT_SUDO: "yes"
