@@ -50,3 +50,7 @@ tags
 ### JupyterNotebook ###
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+*.csv
+
+### Ubuntu Files ###
+*/.Trash-1000/*
