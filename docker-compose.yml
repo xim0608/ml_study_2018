@@ -8,6 +8,6 @@ services:
       - "127.0.0.1:8888:8888"
       - "127.0.0.1:8080:8080"
     volumes:
-      - "$PWD/notebooks:/home/jovyan/work"
+      - "$PWD:/home/jovyan/work"
     environment:
       GRANT_SUDO: "yes"
